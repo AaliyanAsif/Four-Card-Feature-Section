@@ -1,0 +1,133 @@
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins", sans-serif;
+  padding: 10px 7%;
+}
+
+header {
+  text-align: center;
+  padding: 5%;
+  padding-bottom: 30px;
+}
+
+header h1 {
+  margin: 0;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 0;
+}
+
+header p {
+  padding: 10px 26%;
+  color: hsl(229, 6%, 66%);
+  margin: 0;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  padding-left: 70%;
+  padding-top: 40px;
+}
+
+.h1 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 200;
+}
+
+/* Grid  */
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Cards */
+
+.card {
+  background-color: #fff;
+  box-shadow: 10px 10px 20px grey;
+  display: inline-block;
+  margin: 20px;
+  /* width: 27%; */
+}
+
+.card-body {
+  padding: 0px 20px 20px;
+}
+
+.card p {
+  font-size: 15px;
+  color: hsl(229, 6%, 66%);
+}
+
+.one {
+  position: relative;
+  top: 170px;
+}
+
+.three {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+.four {
+  position: relative;
+  top: 170px;
+}
+
+/* hr style  */
+
+.cyan {
+  border: 2px solid hsl(180, 62%, 55%);
+}
+
+.red {
+  border: 2px solid hsl(0, 78%, 62%);
+}
+
+.yellow {
+  border: 2px solid hsl(34, 97%, 64%);
+}
+
+.blue {
+  border: 2px solid hsl(212, 86%, 64%);
+}
+
+/* Mobile View  */
+
+@media only screen and (max-width: 500px) {
+  body {
+    padding: 10px;
+  }
+
+  header p {
+    padding: 20px 0 0;
+  }
+
+  main {
+    display: block;
+  }
+
+  .one {
+    position: static;
+  }
+
+  .three {
+    grid-row-start: 1;
+    grid-column-start: 3;
+  }
+
+  .four {
+    position: static;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
